@@ -334,7 +334,11 @@ function ProfilePage() {
         </Panel>
       </div>
 
-      <Panel title="Preferences" description="Currency, language, theme, privacy and your data.">
+      <Panel
+        id="preferences"
+        title="Preferences"
+        description="Currency, language, theme, privacy and your data."
+      >
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <div className="space-y-2">
             <Label className="text-xs text-muted-foreground">Currency</Label>

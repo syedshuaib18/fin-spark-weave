@@ -121,7 +121,7 @@ export function FinancialHealth() {
           {healthMetrics.map((metric) => (
             <li key={metric.label}>
               <div className="flex items-baseline justify-between gap-4">
-                <span className="min-w-0 truncate text-sm">{metric.label}</span>
+                <span className="min-w-0 text-sm">{metric.label}</span>
                 <span className={cn("shrink-0 text-sm font-semibold", toneColor[metric.tone])}>
                   {metric.display}
                 </span>

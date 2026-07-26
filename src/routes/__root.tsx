@@ -84,6 +84,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "author", content: "FinTrust AI" },
       { property: "og:site_name", content: "FinTrust AI" },
+      { title: "Lovable App" },
+      { property: "og:title", content: "Lovable App" },
+      { name: "twitter:title", content: "Lovable App" },
+      { name: "description", content: "FinTrust AI is a blockchain-powered personal finance advisor that turns spending into smart investing." },
+      { property: "og:description", content: "FinTrust AI is a blockchain-powered personal finance advisor that turns spending into smart investing." },
+      { name: "twitter:description", content: "FinTrust AI is a blockchain-powered personal finance advisor that turns spending into smart investing." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d37e5e72-956e-4b66-b565-9f64bcf48d09/id-preview-9c403cd6--01632fad-c114-452c-8688-245afbc7c3da.lovable.app-1785056110063.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d37e5e72-956e-4b66-b565-9f64bcf48d09/id-preview-9c403cd6--01632fad-c114-452c-8688-245afbc7c3da.lovable.app-1785056110063.png" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:type", content: "website" },
     ],
     links: [
       {

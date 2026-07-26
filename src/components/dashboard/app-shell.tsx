@@ -44,7 +44,7 @@ const navItems: NavItem[] = [
   { label: "Goals", icon: Target, hash: "goals" },
   { label: "Reports", icon: FileBarChart, hash: "blockchain" },
   { label: "Profile", icon: User, to: "/profile" },
-  { label: "Settings", icon: Settings, to: "/profile" },
+  { label: "Settings", icon: Settings, to: "/profile", hash: "preferences" },
 ];
 
 const notifications = [
@@ -74,7 +74,7 @@ export function AppShell({
 
       <nav className="flex-1 space-y-1 px-3">
         {navItems.map((item) => {
-          const active = item.to === pathname;
+          const active = item.to === pathname && !item.hash;
           const content = (
             <>
               <item.icon className="h-4.5 w-4.5 shrink-0" />
@@ -93,6 +93,7 @@ export function AppShell({
             <Link
               key={item.label}
               to={item.to}
+              hash={item.hash}
               className={className}
               title={item.label}
               onClick={() => setMobileOpen(false)}
